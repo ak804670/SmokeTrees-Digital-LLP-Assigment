@@ -7,7 +7,7 @@ require("dotenv").config(); // importing and using dotenv npm library to read da
 
 const allRoutes=require("./routes/routes.js")  // importing routes
 const app= express()  //using express 
-const port= process.env.PORT ||8080       // reading port data from .env file
+const port= process.env.PORT ||8080       
 
 const {sequelize} = require('./models/index.js')
 app.use( bodyParser.urlencoded({ extended: false }) );      // using bodyparser

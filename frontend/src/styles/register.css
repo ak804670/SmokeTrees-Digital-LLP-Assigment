@@ -1,0 +1,91 @@
+.container{
+    
+    margin-left: 32%;
+    margin-right: 25%;
+    margin-top: 2%;
+    color: (#56d8e4, #9f01ea, #56d8e4, #9f01ea);
+   
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(150px) saturate(180%);
+    backdrop-filter: blur(5px) saturate(180%);
+
+    border-radius: 15px;
+    width: fit-content;
+    height: fit-content;
+
+    
+}
+
+.formContainer{
+  padding: 30px;
+   
+}
+
+.text{
+  text-align: center;
+font-size: 41px;
+font-weight: 600;
+font-family: 'Poppins', sans-serif;
+background: -webkit-linear-gradient(right,#9f01ea, #56d8e4, #9f01ea, #56d8e4);
+background-clip: text;
+-webkit-text-fill-color: transparent;
+padding: 20px;
+}
+
+fieldset{
+  border-radius: 5px;
+  
+}
+label{
+  margin-right: 20px;
+}
+
+
+.input {
+    color: black;
+    background-color: transparent;
+    height: 30px;
+    width: 300px;
+    border: 1px solid white;
+    border-radius: 10px;
+  font-size: 15px;
+  text-shadow: orangered 0px 0px 20px;
+  margin: 3px;
+}
+.input:focus {
+    color: black;
+    outline: none;
+
+  border: 1px solid black;
+}
+.input:hover {
+  box-shadow: orangered 0px 0px 20px;
+  border: 1px solid orangered
+}
+
+.input :focus::-webkit-input-placeholder {
+    color:transparent;
+}
+         
+.btn-grad {
+    background-image: linear-gradient(to right, #E55D87 0%, #5FC3E4  51%, #E55D87  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+  }
+
+  .btn-grad:hover {
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+  }
+
+
+
