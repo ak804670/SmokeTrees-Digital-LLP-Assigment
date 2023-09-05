@@ -5,7 +5,7 @@ import axios from 'axios'
 const Register = () => {
 
 
-    const [formData, setFormData] = useState({username: "",password: "", addresses:{}})
+    const [formData, setFormData] = useState({username: "", addresses:{}})
 
     const [addresses, Setaddresses] = useState({street : "", city :"", country:"", pin:null})
 
@@ -42,7 +42,7 @@ const Register = () => {
             console.log(error);
           });
           
-         await setFormData({username: "",password: "", addresses:{}});
+         await setFormData({username: "", addresses:{}});
      await Setaddresses({street : "", city :"", country:"", pin:null || ''});
     }
   return (
@@ -57,8 +57,6 @@ const Register = () => {
         <input className='input' name="username" type='text' value={formData.username} onChange={handleChange}/><br/>
         
         
-        <label htmlFor="password">Password:</label>
-        <input className='input'  name="password" type='password' value={formData.password} onChange={handleChange}/>
    
         </fieldset>
         <fieldset>

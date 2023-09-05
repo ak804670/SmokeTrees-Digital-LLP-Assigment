@@ -4,11 +4,10 @@ const { User, Address } = require('../models');
 
 const register = async (req, res) => {
     try {
-        const {username,password,addresses } = req.body;
+        const {username,addresses } = req.body;
 
         const user = await User.create({
             username,
-            password,
             Addresses: addresses,
         }, {
             include: [ 
